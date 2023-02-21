@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
 
 
     private Transform target;
+    private Rigidbody rb;
     
     
     //to change with states
@@ -18,6 +19,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         target = GameObject.FindWithTag("Player").transform;
+        rb = this.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -25,9 +27,11 @@ public class Enemy : MonoBehaviour
     {
         if (isChasing == true)
         {
-            
+            Vector3 moveDirection = (target.position - this.transform.position).normalized;
+            rb.AddForce(moveDirection * speed * Time.deltaTime, ForceMode.Force);
         }
     }
+    
 
     void OnTriggerEnter(Collider collider)
     {

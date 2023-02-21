@@ -6,6 +6,7 @@ using UnityEngine;
 public class DeplacementTest : MonoBehaviour
 {
     public float speed = 1f;
+    public float speedMax = 10f;
     private Rigidbody rb;
 
     private float _horizontalInput;
@@ -37,5 +38,9 @@ public class DeplacementTest : MonoBehaviour
     {
         Vector3 moveDirection = this.transform.forward * _horizontalInput;
         rb.AddForce(moveDirection * speed, ForceMode.Force);
+        if (rb.velocity.magnitude > speedMax)
+        {
+            rb.velocity = moveDirection * speedMax;
+        }
     }
 }
