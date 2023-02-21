@@ -5,16 +5,20 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - AttackPlayer
+  - MainMenu
+  - Ground
+  - Ladder
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ladder
   - Water
   - UI
-  - 
-  - 
-  - 
+  - AttackPlayer
+  - Player
+  - Ground
   - 
   - 
   - 
