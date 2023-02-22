@@ -45,11 +45,21 @@ public class UIScript : MonoBehaviour
         }
         else if (Input.GetButtonDown("Cancel") && isPaused == true)
         {
-            pauseMenu.SetActive(false);
-            isPaused = false;
-            Time.timeScale = 1;
+           Continue();
         }
         
+    }
+
+    public void Continue()
+    {
+        pauseMenu.SetActive(false);
+        isPaused = false;
+        Time.timeScale = 1;
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 
     public void UpdateScore()

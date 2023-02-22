@@ -28,7 +28,7 @@ public class DeplacementTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isGrounded = Physics.CheckSphere(groundCheck.position, 0.3f, Ground);
+        isGrounded = Physics.CheckSphere(groundCheck.position, 0.3f);
         MyInput();
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
@@ -38,7 +38,11 @@ public class DeplacementTest : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Move();
+        if (isGrounded)
+        {
+            Move();
+        }
+       
         if (nearLadder && _verticalInput != null)
         {
             Takeladder();
@@ -71,7 +75,7 @@ public class DeplacementTest : MonoBehaviour
 
     private void Jump()
     {
-        rb.AddForce(Vector3.up * jumpStrenght, ForceMode.Impulse);
+        rb.AddForce((Vector3.up+ transform.forward) * jumpStrenght, ForceMode.Impulse);
     }
 
     private void Takeladder()

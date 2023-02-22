@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 7903851266170916810}
   - component: {fileID: 3192855674076131696}
   - component: {fileID: 6759471430371016415}
-  - component: {fileID: 3628074867723082644}
+  - component: {fileID: -2976444647205666496}
+  - component: {fileID: 404089232018718620}
   m_Layer: 0
   m_Name: Dagger
   m_TagString: Untagged
@@ -84,17 +85,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3628074867723082644
-MeshCollider:
+--- !u!114 &-2976444647205666496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7457348676903446327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258e47ffaf09a9f44aad352944505366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isWeapon: 1
+  givenScore: 500
+  projectile: {fileID: 9214923425313994002, guid: 08ee42a9b019aa6439a75b6ecba15ebe,
+    type: 3}
+--- !u!65 &404089232018718620
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7457348676903446327}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 2
+  m_Size: {x: 20, y: 10, z: 20}
+  m_Center: {x: 0, y: 0, z: 0}

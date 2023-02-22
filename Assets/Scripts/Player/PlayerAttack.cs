@@ -19,7 +19,7 @@ public class PlayerAttack : MonoBehaviour
     {
         WeaponBehaviour weaponBehaviour = currentWeapon.GetComponent<WeaponBehaviour>();
 
-        if (Input.GetButtonUp("Fire1") && weaponInScene < maxWeaponsLaunched)
+        if (Input.GetButtonUp("Fire1") && weaponInScene < maxWeaponsLaunched && Time.timeScale == 1)
         {
             if (weaponBehaviour.arcThrow == false)
             {
@@ -35,7 +35,6 @@ public class PlayerAttack : MonoBehaviour
                 Quaternion rotation = Quaternion.Euler(new Vector3(-30f, 0f, 0f));
                 GameObject attack = Instantiate(currentWeapon, firePoint.position, transform.rotation*rotation ); 
                 float speed = weaponBehaviour.speed;
-                Debug.Log(attack.transform.forward);
                 attack.GetComponent<Rigidbody>().AddForce(attack.transform.forward * speed);
                 attack.GetComponent<WeaponBehaviour>().playerattackScript = this.GetComponent<PlayerAttack>();
                 weaponInScene++;

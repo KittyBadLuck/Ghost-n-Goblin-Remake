@@ -1,11 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d009e8fa-cfd8-49a8-924e-8d83a3a9157d" name="Changes" comment="" />
+    <list default="true" id="ca54dc67-ca2c-4bf7-b14f-0a8ef85f2a6f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ghost-n-Goblin-Remake/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ghost-n-Goblin-Remake/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/AnimationCHara.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/AnimationCHara.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Axe.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Axe.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Dagger.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Dagger.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Lance.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Lance.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Loot/Accessory.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Loot/Accessory.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Loot/AxeLoot.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Loot/AxeLoot.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Loot/DaggerLoot.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Loot/DaggerLoot.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Loot/Doll.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Loot/Doll.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Loot/LanceLoot.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Loot/LanceLoot.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Loot/ShieldLoot.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Loot/ShieldLoot.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Loot/TorchLoot.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Loot/TorchLoot.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Shield.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Shield.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Torch.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Torch.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Meshes/ArthurOBJ.obj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/ArthurOBJ.obj.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/ArthurOBJ.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/ArthurOBJ.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Blocking_Echelle (1).fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Blocking_Echelle (1).fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Blocking_Niveau (1).fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Blocking_Niveau (1).fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Blocking_porte (1).fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Blocking_porte (1).fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Loot/Accessory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Loot/Accessory.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Loot/Axe.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Loot/Axe.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Loot/Dagger.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Loot/Dagger.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Loot/Doll.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Loot/Doll.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Loot/Lance.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Loot/Lance.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Loot/Shield.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Loot/Shield.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Loot/Torch.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Loot/Torch.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Spear.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Spear.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Weapon/Lance_Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Weapon/Lance_Projectile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/testScene/Clémence.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/testScene/Clémence.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/testScene/Lou.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/testScene/Lou.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Loot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Loot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/DeplacementTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/DeplacementTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/Fire.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/Fire.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyAnimation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/DeplacementTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIScript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -15,15 +74,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.17f1\Editor\Unity.exe" />
@@ -57,12 +116,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d009e8fa-cfd8-49a8-924e-8d83a3a9157d" name="Changes" comment="" />
+      <changelist id="ca54dc67-ca2c-4bf7-b14f-0a8ef85f2a6f" name="Changes" comment="" />
       <created>1676993000883</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676993000883</updated>
       <workItem from="1676993006531" duration="2816000" />
+      <workItem from="1677097934914" duration="3089000" />
     </task>
     <servers />
   </component>
