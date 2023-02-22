@@ -97,8 +97,8 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClip: 0
-    - _AlphaThreshold: 0
-    - _ArmorIntegrity: 0
+    - _AlphaThreshold: 0.2
+    - _ArmorIntegrity: 1.5
     - _Blend: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0
