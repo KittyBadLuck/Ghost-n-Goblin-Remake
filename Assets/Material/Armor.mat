@@ -37,10 +37,11 @@ Material:
     m_Floats:
     - _AlphaThreshold: 0.146
     - _Amout: 0
+    - _ArmorIntegrity: 1.5
     - _EdgeSize: 0.04
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Test: 1.67
+    - _Test: 1
     m_Colors:
     - _EdgeColor: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

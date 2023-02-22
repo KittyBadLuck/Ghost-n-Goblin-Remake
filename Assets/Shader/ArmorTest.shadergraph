@@ -839,10 +839,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1011.199951171875,
-            "y": -679.2000122070313,
-            "width": 207.99981689453126,
-            "height": 301.5999450683594
+            "x": -1033.33349609375,
+            "y": -642.6666870117188,
+            "width": 209.33331298828126,
+            "height": 304.0000915527344
         }
     },
     "m_Slots": [
@@ -2002,7 +2002,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "968bf0b607414c549757591a41c74e0d",
     "m_Id": 0,
-    "m_DisplayName": "Test",
+    "m_DisplayName": "ArmorIntegrity",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -2390,10 +2390,10 @@
     "m_Guid": {
         "m_GuidSerialized": "610a5ea4-d9f3-4824-bae5-65847ca1066e"
     },
-    "m_Name": "Test",
+    "m_Name": "ArmorIntegrity",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Test",
-    "m_DefaultReferenceName": "_Test",
+    "m_RefNameGeneratedByDisplayName": "ArmorIntegrity",
+    "m_DefaultReferenceName": "_ArmorIntegrity",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -2403,10 +2403,10 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": 0.0,
-    "m_FloatType": 0,
+    "m_FloatType": 1,
     "m_RangeValues": {
         "x": 0.0,
-        "y": 1.0
+        "y": 1.5
     }
 }
 
@@ -2614,10 +2614,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1342.6666259765625,
-            "y": -605.3333129882813,
+            "x": -1355.33349609375,
+            "y": -664.6666259765625,
             "width": 209.3333740234375,
-            "height": 304.0000305175781
+            "height": 303.9999694824219
         }
     },
     "m_Slots": [
