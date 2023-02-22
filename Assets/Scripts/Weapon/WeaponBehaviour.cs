@@ -9,7 +9,8 @@ public class WeaponBehaviour : MonoBehaviour
     public Sprite sprite;
     public float speed = 5f;
     public float damage = 2f;
-    public float recul = 1f;
+    public float reculStrenght = 1f;
+    private Vector3 recul;
 
     private float maxLife = 10f;
     private float life = 0;
@@ -28,9 +29,11 @@ public class WeaponBehaviour : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             //hit enemy 
+            recul = new Vector3(0, 0, collision.transform.position.z - transform.position.z).normalized;
+            recul *= reculStrenght;
             collision.gameObject.GetComponent<Enemy>().TakeDamage(damage, recul);
-            Destroy(gameObject);
             playerattackScript.weaponInScene--;
+            Destroy(gameObject);
         }
         else if(createFire && collision.gameObject.CompareTag("Ground"))
         {

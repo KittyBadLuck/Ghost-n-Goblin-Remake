@@ -7,7 +7,8 @@ public class Fire : MonoBehaviour
 {
     public float damage =3;
 
-    public float recul =2;
+    public float reculStrenght =2;
+    public Vector3 recul;
 
     public float lifeMax =10;
 
@@ -30,6 +31,8 @@ public class Fire : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            recul = new Vector3(0, 0, collision.transform.position.z - transform.position.z).normalized;
+            recul *= reculStrenght;
             collision.gameObject.GetComponent<Enemy>().TakeDamage(damage, recul);
         }
     }
