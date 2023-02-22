@@ -114,8 +114,10 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 2fe7c1711e4619e4cab026a51e2b058e, type: 3}
   speed: 50
   damage: 2
-  recul: 1
+  reculStrenght: 1
   playerattackScript: {fileID: 0}
+  explosion: {fileID: 3475181445173673164, guid: 8926a35d79a8f63468fa0aa56d5f3d03,
+    type: 3}
   arcThrow: 1
   blockAttack: 0
   createFire: 0

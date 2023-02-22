@@ -74,7 +74,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 2
+  m_Time: 0.1
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -137,7 +137,7 @@ TrailRenderer:
     textureMode: 0
     shadowBias: 0.5
     generateLightingData: 0
-  m_MinVertexDistance: 0.1
+  m_MinVertexDistance: 0.01
   m_Autodestruct: 0
   m_Emitting: 1
 --- !u!1 &8545107879930035415
@@ -206,6 +206,8 @@ MonoBehaviour:
   damage: 2
   reculStrenght: 1
   playerattackScript: {fileID: 0}
+  explosion: {fileID: 3475181445173673164, guid: 8926a35d79a8f63468fa0aa56d5f3d03,
+    type: 3}
   arcThrow: 0
   blockAttack: 0
   createFire: 0

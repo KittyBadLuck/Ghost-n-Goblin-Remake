@@ -16,6 +16,7 @@ public class WeaponBehaviour : MonoBehaviour
     private float life = 0;
 
     public PlayerAttack playerattackScript;
+    public GameObject explosion;
     
     //Different type of physics
     public bool arcThrow; //to see if it throwing in an arc or straight
@@ -32,23 +33,20 @@ public class WeaponBehaviour : MonoBehaviour
             recul = new Vector3(0, 0, collision.transform.position.z - transform.position.z).normalized;
             recul *= reculStrenght;
             collision.gameObject.GetComponent<Enemy>().TakeDamage(damage, recul);
-            playerattackScript.weaponInScene--;
-            Destroy(gameObject);
         }
         else if(createFire && collision.gameObject.CompareTag("Ground"))
         {
-            GameObject fire = Instantiate(Fire, collision.GetContact(0).point, Quaternion.identity);
-            //destroy if only it wall
-            Destroy(gameObject);
-             playerattackScript.weaponInScene--;
+            Instantiate(Fire, collision.GetContact(0).point + new Vector3(0,0.1f,0), Quaternion.identity);
         }
-        else
-        {
-            Destroy(gameObject);
-            playerattackScript.weaponInScene--;
-        }
+        Impact();
     }
 
+    private void Impact()
+    {
+        Instantiate(explosion, transform.position, Quaternion.identity);
+        playerattackScript.weaponInScene--;
+        Destroy(gameObject);
+    }
     private void Update()
     {
         //destroy if it never collides with smtg
