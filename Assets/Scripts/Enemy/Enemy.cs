@@ -26,6 +26,7 @@ public class Enemy : MonoBehaviour
     private Rigidbody rb;
     private Vector3 distance;
     private UIScript _uiScript;
+    private EnemyLoot _enemyLoot;
     
     
     //to change with states
@@ -37,6 +38,7 @@ public class Enemy : MonoBehaviour
     {
         target = GameObject.FindWithTag("Player").transform;
         _uiScript = GameObject.FindWithTag("MainMenu").GetComponent<UIScript>();
+        _enemyLoot = this.GetComponent<EnemyLoot>();
         rb = this.GetComponent<Rigidbody>();
         timer = attackRate;
         currentHealth = healthMax;
@@ -82,7 +84,7 @@ public class Enemy : MonoBehaviour
     {
         if (isChasing == true)
         {
-            Vector3 moveDirection = (distance).normalized;
+            Vector3 moveDirection = new Vector3(0, 0, distance.z).normalized;
             rb.AddForce(moveDirection * speed, ForceMode.Force);
             if (rb.velocity.magnitude > speedMax)
             {
@@ -112,9 +114,10 @@ public class Enemy : MonoBehaviour
 
     public void Die()
     {
-        Destroy(gameObject);
+        _enemyLoot.Loot(transform.position);
         _uiScript.score += givenScore;
         _uiScript.UpdateScore();
+        Destroy(gameObject);
     }
 
 

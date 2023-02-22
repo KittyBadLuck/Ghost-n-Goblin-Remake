@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -18,6 +19,20 @@ public class UIScript : MonoBehaviour
     public GameObject gameOverMenu;
 
     private bool isPaused;
+
+    private void Start()
+    {
+        if (PlayerPrefs.HasKey("HighScore"))
+        {
+           highScore =  PlayerPrefs.GetInt("HighScore");
+           highText.text = "HighScore : " + highScore;
+        }
+        else
+        {
+            PlayerPrefs.SetInt("HighScore", highScore);
+        }
+       
+    }
 
     // Update is called once per frame
     void Update()
@@ -42,6 +57,8 @@ public class UIScript : MonoBehaviour
         scoreText.text = "Score : " + score;
         if (score >= highScore)
         {
+            highScore = score;
+            PlayerPrefs.SetInt("HighScore", highScore);
             highText.text = "HighScore : " + highScore;
         }
     }
