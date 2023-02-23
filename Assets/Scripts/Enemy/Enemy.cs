@@ -32,6 +32,8 @@ public class Enemy : MonoBehaviour
     public int givenScore;
 
     private float timerAttack;
+    public Transform hitPoint;
+    public GameObject Explosion;
     
     //other ref
     private Transform target;
@@ -49,7 +51,7 @@ public class Enemy : MonoBehaviour
 
     public Animator animator;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
        
         _enemyLoot = GetComponentInParent<EnemyLoot>();
@@ -143,7 +145,6 @@ public class Enemy : MonoBehaviour
            
             if (isChasing == true)
             {
-                Debug.Log("walk");
                 Vector3 moveDirection = new Vector3(0, 0, distance.z).normalized;
                 rb.AddForce(moveDirection * speed, ForceMode.Force); 
                 if (rb.velocity.magnitude > speedMax)
@@ -152,12 +153,10 @@ public class Enemy : MonoBehaviour
                 }
 
                 transform.forward = moveDirection;
-                Debug.Log(rb.velocity);
             }
 
             if (isRandomMove)
             {
-                Debug.Log("walk");
                 Vector3 moveDirection = new Vector3(0, 0, RandomDirection).normalized;
                 rb.AddForce(moveDirection * speed, ForceMode.Force); 
                 if (rb.velocity.magnitude > speedMax)
@@ -190,6 +189,7 @@ public class Enemy : MonoBehaviour
         if (distance.magnitude <= attackRange)
         {
             target.GetComponent<PlayerManager>().TakeDamage();
+            Instantiate(Explosion, hitPoint);
         }
     }
 
@@ -214,7 +214,7 @@ public class Enemy : MonoBehaviour
 
     public void Die()
     {
-        _enemyLoot.Loot(transform.position);
+        _enemyLoot.Loot(this.transform.position);
         _uiScript.score += givenScore;
         _uiScript.UpdateScore();
         Destroy(gameObject);

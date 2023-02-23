@@ -7,12 +7,12 @@ public class CameraMove : MonoBehaviour
 {
     private Transform target;
 
-    private Vector3 offset;
+    public Vector3 offset = new Vector3(15,0,0);
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         target = GameObject.FindWithTag("Player").transform;
-        offset = this.transform.position - target.position;
+       // offset = this.transform.position - target.position;
     }
 
     private void FixedUpdate()

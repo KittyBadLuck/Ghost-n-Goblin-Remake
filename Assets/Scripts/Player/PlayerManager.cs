@@ -11,6 +11,7 @@ public class PlayerManager : MonoBehaviour
     private int currentWeaponInt = 0;
     public int damageTaken = 0;
     public bool isCrouch;
+    
 
 
     //ref to other script
@@ -19,7 +20,7 @@ public class PlayerManager : MonoBehaviour
     private Animator _animator;
    
 
-    private void Start()
+    private void Awake()
     {
         attackScript.currentWeapon = weaponInventory[0];
         weaponPannel.sprite = weaponInventory[0].GetComponent<WeaponBehaviour>().sprite;
@@ -50,7 +51,6 @@ public class PlayerManager : MonoBehaviour
     {
 
         if (isCrouch == false)
-        if (damageTaken == 0)
         {
             if (damageTaken == 0)
             {
@@ -58,9 +58,13 @@ public class PlayerManager : MonoBehaviour
             }
             else if (damageTaken >= 1)
             {
+                
+               
                 _animator.SetBool("IsDead", true);
             }
+             
         }
+        
     }
 
     public void Die()

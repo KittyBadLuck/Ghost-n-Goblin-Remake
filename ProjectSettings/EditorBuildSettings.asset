@@ -11,7 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/testScene/SceneAudiotest.unity
-    guid: fb2912ca3407bd54eb50afffc7ea078a
+    path: Assets/Scenes/testScene/Lou.unity
+    guid: 42a33505ec80a4c4aae39dc6317a811c
   m_configObjects: {}

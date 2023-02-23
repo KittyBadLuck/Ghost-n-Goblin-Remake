@@ -70,6 +70,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Noise:
+        m_Texture: {fileID: 2800000, guid: 9b3ef049aec749e4c95195461244f69d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -97,8 +101,8 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClip: 0
-    - _AlphaThreshold: 0.2
-    - _ArmorIntegrity: 1.5
+    - _AlphaThreshold: 0
+    - _ArmorIntegrity: 0.5
     - _Blend: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0

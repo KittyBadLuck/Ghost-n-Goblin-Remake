@@ -12,7 +12,7 @@ public class Loot : MonoBehaviour
     private PlayerManager _playerManager;
     private UIScript _uiScript;
 
-    private void Start()
+    private void Awake()
     {
         _uiScript = GameObject.FindWithTag("MainMenu").GetComponent<UIScript>();
     }

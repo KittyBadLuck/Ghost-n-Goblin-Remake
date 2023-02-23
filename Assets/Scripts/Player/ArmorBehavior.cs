@@ -7,13 +7,13 @@ public class ArmorBehavior : MonoBehaviour
 
     public GameObject armorShards;
     private ParticleSystem[] systems;
-    [SerializeField] private List<GameObject> armorParts = new List<GameObject>();
-    private List<Renderer> armorRenderer = new List<Renderer>(); 
+    private Animator _animator;
 
     // Start is called before the first frame update
     void Start()
     {
         systems = armorShards.GetComponentsInChildren<ParticleSystem>();
+        _animator = GetComponent<Animator>();
 
         ParticleSystem.EmissionModule emissionModule;
 
@@ -22,33 +22,17 @@ public class ArmorBehavior : MonoBehaviour
             emissionModule = system.emission;
             emissionModule.enabled = false; 
         }
-
-        foreach (var armorPart in armorParts)
-        {
-            armorRenderer.Add(armorPart.GetComponent<MeshRenderer>());
-            
-            Debug.Log(armorRenderer.Count);
-        } 
     }
-
-    // Update is called once per frame
-    void Update()
+    public void LooseArmor()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        _animator.SetBool("Desintegrate", true);
+        ParticleSystem.EmissionModule emissionModule;
+
+        foreach (var system in systems)
         {
-            ParticleSystem.EmissionModule emissionModule;
-
-            foreach (var system in systems)
-            {
-                emissionModule = system.emission;
-                emissionModule.enabled = true; 
-            }
-
-            foreach (var armorRenderer in armorRenderer)
-            {
-                armorRenderer.material.SetFloat("_AlphaThreshold", 1); 
-                Debug.Log(armorRenderer.material);
-            }
+            emissionModule = system.emission;
+            emissionModule.enabled = true;
+            system.Play();
         }
     }
 }

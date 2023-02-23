@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Mime;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,16 +12,26 @@ public class UIScript : MonoBehaviour
 
     public int score;
 
-    public TextMeshProUGUI highText;
+    public float maxTimer = 120;
+    private float totalTime;
+    private int minutes;
+    private int seconds;
 
+    public TextMeshProUGUI highText;
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI timerText;
+
+    public GameObject victoryScreen;
+    public TextMeshProUGUI remainTime;
+    public TextMeshProUGUI finalScore;
+    public TextMeshProUGUI highScoreText;
 
     public GameObject pauseMenu;
     public GameObject gameOverMenu;
 
     private bool isPaused;
 
-    private void Start()
+    private void Awake()
     {
         if (PlayerPrefs.HasKey("HighScore"))
         {
@@ -31,7 +42,9 @@ public class UIScript : MonoBehaviour
         {
             PlayerPrefs.SetInt("HighScore", highScore);
         }
-       
+
+        totalTime = maxTimer;
+
     }
 
     // Update is called once per frame
@@ -46,6 +59,13 @@ public class UIScript : MonoBehaviour
         else if (Input.GetButtonDown("Cancel") && isPaused == true)
         {
            Continue();
+        }
+        totalTime -= Time.deltaTime;
+        UpdateLevelTimer(totalTime );
+
+        if (totalTime <= 0)
+        {
+            GameOver();
         }
         
     }
@@ -75,12 +95,52 @@ public class UIScript : MonoBehaviour
 
     public void GameOver()
     {
+        Time.timeScale = 0;
         gameOverMenu.SetActive(true);
+    }
+
+    public void Victory()
+    {
+        victoryScreen.SetActive(true);
+        Time.timeScale = 0;
+        remainTime.text = timerText.text;
+        int final = score + (seconds + (minutes * 60));
+        finalScore.text = final.ToString();
+        if (final > highScore)
+        {
+            highScore = final;
+            highScoreText.text = highScore.ToString();
+            PlayerPrefs.SetInt("HighScore", highScore);
+        }
+        else
+        {
+            highScoreText.text = highScore.ToString();
+
+        }
     }
 
     public void Retry()
     {
+        Debug.Log("Retry");
+        Time.timeScale = 1;
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
+    }
+
+
+    public void UpdateLevelTimer(float totalSeconds)
+    {
+         minutes = Mathf.FloorToInt(totalSeconds / 60f);
+         seconds = Mathf.RoundToInt(totalSeconds % 60f);
+ 
+        string formatedSeconds = seconds.ToString();
+ 
+        if (seconds == 60)
+        {
+            seconds = 0;
+            minutes += 1;
+        }
+ 
+        timerText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
     }
 }

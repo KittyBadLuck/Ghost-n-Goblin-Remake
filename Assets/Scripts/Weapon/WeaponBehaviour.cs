@@ -15,14 +15,21 @@ public class WeaponBehaviour : MonoBehaviour
     private float maxLife = 10f;
     private float life = 0;
 
-    public PlayerAttack playerattackScript;
+    public GameObject explosion;
+
+    public CharaController charaController;
     
     //Different type of physics
     public bool arcThrow; //to see if it throwing in an arc or straight
     public bool blockAttack; //to see if it is blocking attacks
     public bool createFire; //to see if it is creating fire on ground
     public GameObject Fire;
-    
+
+    private void Start()
+    {
+        charaController = GameObject.FindWithTag("Player").GetComponent<CharaController>();
+    }
+
     //add destroys
     private void OnCollisionEnter(Collision collision)
     {
@@ -32,21 +39,16 @@ public class WeaponBehaviour : MonoBehaviour
             recul = new Vector3(0, 0, collision.transform.position.z - transform.position.z).normalized;
             recul *= reculStrenght;
             collision.gameObject.GetComponent<Enemy>().TakeDamage(damage, recul);
-            playerattackScript.weaponInScene--;
-            Destroy(gameObject);
         }
         else if(createFire && collision.gameObject.CompareTag("Ground"))
         {
             GameObject fire = Instantiate(Fire, collision.GetContact(0).point, Quaternion.identity);
-            //destroy if only it wall
-            Destroy(gameObject);
-             playerattackScript.weaponInScene--;
+
         }
-        else
-        {
-            Destroy(gameObject);
-            playerattackScript.weaponInScene--;
-        }
+
+        Instantiate(explosion, collision.contacts[0].point, Quaternion.identity);
+        charaController.weaponInScene--;
+        Destroy(gameObject);
     }
 
     private void Update()
@@ -56,7 +58,7 @@ public class WeaponBehaviour : MonoBehaviour
         if (life >= maxLife)
         {
             Destroy(gameObject);
-            playerattackScript.weaponInScene--;
+            charaController.weaponInScene--;
         }
     }
 }

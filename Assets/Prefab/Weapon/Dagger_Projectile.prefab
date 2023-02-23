@@ -115,9 +115,9 @@ MonoBehaviour:
   speed: 100
   damage: 2
   reculStrenght: 1
-  playerattackScript: {fileID: 0}
-  explosion: {fileID: 3475181445173673164, guid: 8926a35d79a8f63468fa0aa56d5f3d03,
+  explosion: {fileID: 4849277117792516116, guid: 4eeda6c04965e6449928504370516dfb,
     type: 3}
+  charaController: {fileID: 0}
   arcThrow: 0
   blockAttack: 0
   createFire: 0

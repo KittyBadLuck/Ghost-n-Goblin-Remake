@@ -19,7 +19,7 @@ public class CharaController : MonoBehaviour
     private float _horizontalInput;
     private float _verticalInput;
     private bool nearLadder;
-    private bool isGrounded;
+    public bool isGrounded;
     private CapsuleCollider _collider;
 
     private Animator _animator;
@@ -61,21 +61,19 @@ public class CharaController : MonoBehaviour
             _animator.SetBool("IsJumping", false);
             _animator.SetBool("IsClimbing", false);
         }
-        else
+        else if( _animator.GetBool("IsClimbing") == false)
         {
-            _animator.SetBool("IsJumping", true);
             _animator.SetBool("IsMoving", false);
+            _animator.SetBool("IsJumping", true);
         }
     }
 
     private void FixedUpdate()
     {
-        if (isGrounded && _animator.GetBool("IsThrowing") == false)
+        if ( _animator.GetBool("IsThrowing") == false)
         {
             Move();
-            
         }
-        
 
         if (nearLadder && _verticalInput != 0 && _animator.GetBool("IsThrowing") == false)
         {
@@ -92,6 +90,8 @@ public class CharaController : MonoBehaviour
             _animator.SetBool("IsCrouching", false);
             this.GetComponent<PlayerManager>().isCrouch = false;
         }
+        
+       
     }
 
     private void MyInput()
@@ -137,9 +137,9 @@ public class CharaController : MonoBehaviour
     private void Takeladder()
     {
         _animator.SetBool("IsClimbing", true);
-        _animator.SetBool("IsJumping", false);
         Vector3 moveDirection = Vector3.up* _verticalInput;
         rb.AddForce(moveDirection *speedLadder, ForceMode.Force);
+        rb.velocity = new Vector3(0, rb.velocity.y, 0);
         if (rb.velocity.y > speedMax || rb.velocity.y < -speedMax)
         {
             rb.velocity = Vector3.Lerp(rb.velocity,new Vector3(rb.velocity.x, moveDirection.y* speedMax, rb.velocity.z) , 0.5f);
@@ -159,6 +159,7 @@ public class CharaController : MonoBehaviour
         if (other.CompareTag("Ladder"))
         {
             nearLadder = false;
+            rb.velocity = new Vector3(0, 0, rb.velocity.z);
         }
     }
 }
