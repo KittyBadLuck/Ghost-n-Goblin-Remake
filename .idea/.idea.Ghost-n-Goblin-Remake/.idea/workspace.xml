@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca54dc67-ca2c-4bf7-b14f-0a8ef85f2a6f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ghost-n-Goblin-Remake/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ghost-n-Goblin-Remake/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Material/M_Torch.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/M_Torch.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Material/Texture/Body/Body_M_Body_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Texture/Body/Body_M_Body_Normal.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Material/Texture/Face/ArthurUV_M_Face_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Texture/Face/ArthurUV_M_Face_Normal.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Meshes/Mutant.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/Mutant.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Mutant (1).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Mutant (1).prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/TorchWithFIre.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TorchWithFIre.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/testScene/Lou.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/testScene/Lou.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIScript.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIScript.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_StandaloneWindows.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_StandaloneWindows.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/CommonBurstAotSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/CommonBurstAotSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +76,7 @@
       <updated>1676993000883</updated>
       <workItem from="1676993006531" duration="2816000" />
       <workItem from="1677097934914" duration="3089000" />
-      <workItem from="1677121602411" duration="3423000" />
+      <workItem from="1677121602411" duration="4163000" />
     </task>
     <servers />
   </component>
