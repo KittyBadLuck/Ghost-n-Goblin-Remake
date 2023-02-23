@@ -15,7 +15,8 @@ public class WeaponBehaviour : MonoBehaviour
     private float maxLife = 10f;
     private float life = 0;
 
-    public PlayerAttack playerattackScript;
+    public PlayerAnimation playerattackScript;
+    private CharaController _charaController;
     public GameObject explosion;
     
     //Different type of physics
@@ -23,7 +24,13 @@ public class WeaponBehaviour : MonoBehaviour
     public bool blockAttack; //to see if it is blocking attacks
     public bool createFire; //to see if it is creating fire on ground
     public GameObject Fire;
-    
+
+
+    private void Start()
+    {
+        _charaController = GameObject.FindWithTag("Player").GetComponent<CharaController>();
+    }
+
     //add destroys
     private void OnCollisionEnter(Collision collision)
     {
@@ -44,7 +51,7 @@ public class WeaponBehaviour : MonoBehaviour
     private void Impact()
     {
         Instantiate(explosion, transform.position, Quaternion.identity);
-        playerattackScript.weaponInScene--;
+        _charaController.weaponInScene--;
         Destroy(gameObject);
     }
     private void Update()
@@ -54,7 +61,7 @@ public class WeaponBehaviour : MonoBehaviour
         if (life >= maxLife)
         {
             Destroy(gameObject);
-            playerattackScript.weaponInScene--;
+            _charaController.weaponInScene--;
         }
     }
 }

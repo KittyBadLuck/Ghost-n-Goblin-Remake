@@ -10,17 +10,20 @@ public class PlayerManager : MonoBehaviour
     public Image weaponPannel;
     private int currentWeaponInt = 0;
     public int damageTaken = 0;
-
+    public bool isCrouch;
 
     //ref to other script
-    public PlayerAttack attackScript;
+    public PlayerAnimation attackScript;
     private UIScript uiScript;
+    private Animator _animator;
+   
 
     private void Start()
     {
         attackScript.currentWeapon = weaponInventory[0];
         weaponPannel.sprite = weaponInventory[0].GetComponent<WeaponBehaviour>().sprite;
         uiScript = GameObject.FindWithTag("MainMenu").GetComponent<UIScript>();
+        _animator = GetComponentInChildren<Animator>();
     }
 
     private void Update()
@@ -44,15 +47,19 @@ public class PlayerManager : MonoBehaviour
 
     public void TakeDamage()
     {
-        if (damageTaken == 0)
+
+        if (isCrouch == false)
         {
-            damageTaken++;
+            if (damageTaken == 0)
+            {
+                _animator.SetBool("IsHit", true);
+            }
+            else if (damageTaken >= 1)
+            {
+                _animator.SetBool("IsDead", true);
+            }
         }
-        else if (damageTaken >= 1)
-        {
-            damageTaken++;
-           Die();
-        }
+        
     }
 
     public void Die()

@@ -1,12 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro.EditorUtilities;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
-public class DeplacementTest : MonoBehaviour
+public class CharaController : MonoBehaviour
 {
     public float speed = 1f;
+    public float speedCrouch = 10f;
     public float speedLadder = 5f;
     public float jumpStrenght = 5f;
     public float speedMax = 10f;
@@ -18,34 +20,77 @@ public class DeplacementTest : MonoBehaviour
     private float _verticalInput;
     private bool nearLadder;
     private bool isGrounded;
+    private CapsuleCollider _collider;
+
+    private Animator _animator;
+    
+    public int maxWeaponsLaunched =3;
+
+    public int weaponInScene =0;
 
 
     private void Start()
     {
         rb = this.GetComponent<Rigidbody>();
+        _animator = GetComponentInChildren<Animator>();
+        _collider = GetComponent<CapsuleCollider>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        isGrounded = Physics.CheckSphere(groundCheck.position, 0.3f);
+        isGrounded = Physics.CheckSphere(groundCheck.position, 0.3f, Ground);
         MyInput();
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetButtonDown("Jump") && isGrounded && _animator.GetBool("IsThrowing") == false)
         {
             Jump();
+        }
+        if (Input.GetButtonUp("Fire1") && weaponInScene < maxWeaponsLaunched && Time.timeScale == 1)
+        {
+            _animator.SetBool("IsThrowing", true);
+            _animator.SetBool("IsMoving", false);
+        }
+
+        if (rb.velocity.z == 0)
+        {
+            _animator.SetBool("IsMoving", false);
+        }
+
+        if (isGrounded)
+        {
+            _animator.SetBool("IsJumping", false);
+            _animator.SetBool("IsClimbing", false);
+        }
+        else
+        {
+            _animator.SetBool("IsJumping", true);
+            _animator.SetBool("IsMoving", false);
         }
     }
 
     private void FixedUpdate()
     {
-        if (isGrounded)
+        if (isGrounded && _animator.GetBool("IsThrowing") == false)
         {
             Move();
+            
         }
-       
-        if (nearLadder && _verticalInput != null)
+        
+
+        if (nearLadder && _verticalInput != 0 && _animator.GetBool("IsThrowing") == false)
         {
+            _animator.SetBool("IsMoving", false);
             Takeladder();
+        }
+        else if (nearLadder == false && _verticalInput < 0 && _animator.GetBool("IsThrowing") == false)
+        {
+            Crouch();
+        }
+        else
+        {
+            _animator.SetBool("IsClimbing", false);
+            _animator.SetBool("IsCrouching", false);
+            this.GetComponent<PlayerManager>().isCrouch = false;
         }
     }
 
@@ -58,6 +103,7 @@ public class DeplacementTest : MonoBehaviour
 
     private void Move()
     {
+        _animator.SetBool("IsMoving", true);
         Vector3 moveDirection = Vector3.forward * _horizontalInput;
         rb.AddForce(moveDirection * speed, ForceMode.Force);
         if (rb.velocity.z > speedMax || rb.velocity.z < -speedMax)
@@ -75,11 +121,23 @@ public class DeplacementTest : MonoBehaviour
 
     private void Jump()
     {
+        _animator.SetBool("IsJumping", true);
         rb.AddForce((Vector3.up+ transform.forward) * jumpStrenght, ForceMode.Impulse);
     }
 
+    private void Crouch()
+    {
+        _animator.SetBool("IsCrouching", true);
+        this.GetComponent<PlayerManager>().isCrouch = true;
+        speedMax = speedCrouch;
+        _collider.center = new Vector3(0, -0.3f, 0);
+       _collider.height = 1.5f;
+        
+    }
     private void Takeladder()
     {
+        _animator.SetBool("IsClimbing", true);
+        _animator.SetBool("IsJumping", false);
         Vector3 moveDirection = Vector3.up* _verticalInput;
         rb.AddForce(moveDirection *speedLadder, ForceMode.Force);
         if (rb.velocity.y > speedMax || rb.velocity.y < -speedMax)

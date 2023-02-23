@@ -2,13 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca54dc67-ca2c-4bf7-b14f-0a8ef85f2a6f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Material/M_Torch.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/M_Torch.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Texture/Body/Body_M_Body_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Texture/Body/Body_M_Body_Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Texture/Face/ArthurUV_M_Face_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Texture/Face/ArthurUV_M_Face_Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/Mutant.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/Mutant.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ghost-n-Goblin-Remake/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ghost-n-Goblin-Remake/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/CharaAnimation.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/CharaAnimation.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Death.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Death.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Enemy/Mutant Dying.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Enemy/Mutant Dying.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Hit.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Hit.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Jump.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Jump.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Throw.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Throw.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Weapon/Trail.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Weapon/Trail.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Flammes (6).prefab" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Mutant (1).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Mutant (1).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TorchWithFIre.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TorchWithFIre.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Torch.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TorchWithFIre.prefab" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/testScene/Lou.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/testScene/Lou.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/DeplacementTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/DeplacementTest.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAttack.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAttack.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vfx/Elements/Fire.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vfx/Elements/Fire.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +32,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/DeplacementTest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimation.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -38,7 +53,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Users\Lou de TARADE\Documents\unity\project\2021.3.17f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.17f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\Rubika\Desktop\GameJam\Ghost-n-Goblin-Remake -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Rubika\Desktop\GameJam\Ghost-n-Goblin-Remake" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -77,6 +92,7 @@
       <workItem from="1676993006531" duration="2816000" />
       <workItem from="1677097934914" duration="3089000" />
       <workItem from="1677121602411" duration="4163000" />
+      <workItem from="1677167321802" duration="6382000" />
     </task>
     <servers />
   </component>
