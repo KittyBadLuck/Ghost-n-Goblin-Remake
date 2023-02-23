@@ -9,6 +9,7 @@ TagManager:
   - MainMenu
   - Ground
   - Ladder
+  - Music
   layers:
   - Default
   - TransparentFX

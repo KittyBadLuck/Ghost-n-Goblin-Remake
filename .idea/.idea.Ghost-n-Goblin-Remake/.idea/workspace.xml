@@ -2,106 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca54dc67-ca2c-4bf7-b14f-0a8ef85f2a6f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ghost-n-Goblin-Remake/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ghost-n-Goblin-Remake/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/CharaAnimation.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/CharaAnimation.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Climbing Ladder.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Climbing Ladder.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Crouch.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Crouch.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Death.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Death.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Hit.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Hit.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Jump.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Jump.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Slow Run.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Slow Run.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Throw.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Throw.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials/Sky_Anime_03_Day_a.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials/Sky_Anime_03_Day_a.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials/Sky_Anime_11_morning_a.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials/Sky_Anime_11_morning_a.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials/Sky_Anime_15_Day_a.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials/Sky_Anime_15_Day_a.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials/Sky_Anime_18_day_a.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials/Sky_Anime_18_day_a.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials/Sky_LowPoly_01_Day_a.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials/Sky_LowPoly_01_Day_a.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials/Sky_LowPoly_02_Night_a.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials/Sky_LowPoly_02_Night_a.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures/Sky_Anime_03_Day_a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures/Sky_Anime_03_Day_a.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures/Sky_Anime_11_morning_a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures/Sky_Anime_11_morning_a.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures/Sky_Anime_15_Day_a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures/Sky_Anime_15_Day_a.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures/Sky_Anime_18_day_a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures/Sky_Anime_18_day_a.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures/Sky_LowPoly_01_Day_a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures/Sky_LowPoly_01_Day_a.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures/Sky_LowPoly_02_Night_a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures/Sky_LowPoly_02_Night_a.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials/Sky_Anime_03_Day_a.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials/Sky_Anime_03_Day_a.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials/Sky_Anime_11_morning_a.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials/Sky_Anime_11_morning_a.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials/Sky_Anime_15_Day_a.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials/Sky_Anime_15_Day_a.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials/Sky_Anime_18_day_a.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials/Sky_Anime_18_day_a.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials/Sky_LowPoly_01_Day_a.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials/Sky_LowPoly_01_Day_a.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials/Sky_LowPoly_02_Night_a.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials/Sky_LowPoly_02_Night_a.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Textures/Sky_Anime_03_Day_a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Textures/Sky_Anime_03_Day_a.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Textures/Sky_Anime_11_morning_a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Textures/Sky_Anime_11_morning_a.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Textures/Sky_Anime_15_Day_a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Textures/Sky_Anime_15_Day_a.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Textures/Sky_Anime_18_day_a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Textures/Sky_Anime_18_day_a.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Textures/Sky_LowPoly_01_Day_a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Textures/Sky_LowPoly_01_Day_a.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Textures/Sky_LowPoly_02_Night_a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Textures/Sky_LowPoly_02_Night_a.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/ReadMe.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/ReadMe.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Scene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Scene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/M_Armor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/M_Armor.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/M_Body.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/M_Body.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/M_Body.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/M_Body.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/M_Face.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/M_Face.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/M_Face.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/M_Face.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/M_Helmet.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/M_Helmet.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/M_Helmet.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/M_Helmet.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Texture/Armor/ArthurUV_M_Armor_BaseMap.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Texture/Armor/ArthurUV_M_Armor_BaseMap.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Texture/Body/Body_M_Body_BaseMap.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Texture/Body/Body_M_Body_BaseMap.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/M_Torch.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/M_Torch.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Material/Texture/Body/Body_M_Body_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Texture/Body/Body_M_Body_Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Texture/Face/ArthurUV_M_Face_BaseMap.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Texture/Face/ArthurUV_M_Face_BaseMap.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Material/Texture/Face/ArthurUV_M_Face_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Texture/Face/ArthurUV_M_Face_Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Texture/Helmet/Helmet_ArthurTest3_initialShadingGroup1_BaseMap.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Texture/Helmet/Helmet_ArthurTest3_initialShadingGroup1_BaseMap.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Texture/star.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Texture/star.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Weapon/Trail.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Weapon/Trail.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Character.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Weapon/Axe_Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Weapon/Axe_Projectile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Weapon/Dagger_Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Weapon/Dagger_Projectile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Weapon/Fire.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Weapon/Fire.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Weapon/Lance_Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Weapon/Lance_Projectile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Weapon/Shield_Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Weapon/Shield_Projectile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Weapon/Torch_Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Weapon/Torch_Projectile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Flammes (6).prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Flammes (6).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Meshes/Mutant.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/Mutant.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Mutant (1).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Mutant (1).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TorchWithFIre.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TorchWithFIre.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/testScene/Lou.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/testScene/Lou.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/testScene/Lou/Global Volume Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/testScene/Lou/Global Volume Profile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/Fire.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VFX/Fire.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/Fire.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VFX/Fire.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shader/ArmorTest.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shader/ArmorTest.shadergraph" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,10 +16,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/DeplacementTest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VFX/DestroyOnEnd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -133,7 +38,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.17f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Users\Lou de TARADE\Documents\unity\project\2021.3.17f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\Rubika\Desktop\GameJam\Ghost-n-Goblin-Remake -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Rubika\Desktop\GameJam\Ghost-n-Goblin-Remake" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -170,7 +75,8 @@
       <option name="presentableId" value="Default" />
       <updated>1676993000883</updated>
       <workItem from="1676993006531" duration="2816000" />
-      <workItem from="1677097934914" duration="5842000" />
+      <workItem from="1677097934914" duration="3089000" />
+      <workItem from="1677121602411" duration="4163000" />
     </task>
     <servers />
   </component>
