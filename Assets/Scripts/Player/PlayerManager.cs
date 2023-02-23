@@ -12,6 +12,7 @@ public class PlayerManager : MonoBehaviour
     public int damageTaken = 0;
     public bool isCrouch;
 
+
     //ref to other script
     public PlayerAnimation attackScript;
     private UIScript uiScript;
@@ -49,6 +50,7 @@ public class PlayerManager : MonoBehaviour
     {
 
         if (isCrouch == false)
+        if (damageTaken == 0)
         {
             if (damageTaken == 0)
             {
@@ -59,7 +61,6 @@ public class PlayerManager : MonoBehaviour
                 _animator.SetBool("IsDead", true);
             }
         }
-        
     }
 
     public void Die()
