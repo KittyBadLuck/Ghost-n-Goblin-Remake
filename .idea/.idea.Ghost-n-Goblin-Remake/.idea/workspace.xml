@@ -2,29 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca54dc67-ca2c-4bf7-b14f-0a8ef85f2a6f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ghost-n-Goblin-Remake/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ghost-n-Goblin-Remake/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/CharaAnimation.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/CharaAnimation.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Death.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Death.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Enemy/Mutant Dying.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Enemy/Mutant Dying.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Hit.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Hit.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Jump.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Jump.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Throw.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Throw.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Weapon/Trail.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Weapon/Trail.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Flammes (6).prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Mutant (1).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Mutant (1).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Torch.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TorchWithFIre.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/testScene/Lou.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/testScene/Lou.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/DeplacementTest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/DeplacementTest.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAttack.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAttack.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/vfx/Elements/Fire.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vfx/Elements/Fire.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Fire.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Fire.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Fire.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Fire.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/M_Torch.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/M_Torch.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Texture/Fire_Texture.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Texture/Fire_Texture.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +74,7 @@
       <workItem from="1676993006531" duration="2816000" />
       <workItem from="1677097934914" duration="3089000" />
       <workItem from="1677121602411" duration="4163000" />
-      <workItem from="1677167321802" duration="6382000" />
+      <workItem from="1677167321802" duration="6667000" />
     </task>
     <servers />
   </component>
