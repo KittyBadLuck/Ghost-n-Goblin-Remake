@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e690fd604efdaed48b839c333fa89f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 60b107723a96dd44caa5dd9312054a07, type: 3}
+  sprite: {fileID: 21300000, guid: abb5a75fa820ea942ba3d37dbbe5ab09, type: 3}
   speed: 50
   damage: 2
   reculStrenght: 3

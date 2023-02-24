@@ -19,6 +19,7 @@ public class PlayerManager : MonoBehaviour
     public Animator _animatorArmor;
     private UIScript uiScript;
     private Animator _animator;
+    private AudioSource hitSound;
    
 
     private void Awake()
@@ -27,6 +28,7 @@ public class PlayerManager : MonoBehaviour
         weaponPannel.sprite = weaponInventory[0].GetComponent<WeaponBehaviour>().sprite;
         uiScript = GameObject.FindWithTag("MainMenu").GetComponent<UIScript>();
         _animator = GetComponentInChildren<Animator>();
+        hitSound = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -55,6 +57,7 @@ public class PlayerManager : MonoBehaviour
         {
             if (damageTaken == 0)
             {
+                hitSound.Play();
                 _animator.SetBool("IsHit", true);
             }
             else if (damageTaken >= 1)

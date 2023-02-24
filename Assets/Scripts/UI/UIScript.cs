@@ -22,18 +22,25 @@ public class UIScript : MonoBehaviour
     public TextMeshProUGUI timerText;
 
     public GameObject victoryScreen;
+    public Animator VictoryAnimator;
+    
     public TextMeshProUGUI remainTime;
     public TextMeshProUGUI finalScore;
     public TextMeshProUGUI highScoreText;
 
     public GameObject pauseMenu;
+    public Animator pauseAnimator;
+    
     public GameObject gameOverMenu;
+    public Animator gameOverAnimator;
+    
 
     private bool isPaused;
     private bool goPlayed;
     private bool victoryPlayed;
 
     private AudioManager _audioManager;
+    
 
     private void Awake()
     {
@@ -60,12 +67,13 @@ public class UIScript : MonoBehaviour
     {
         if (Input.GetButtonDown("Cancel") && isPaused == false)
         {
-            pauseMenu.SetActive(true);
+            pauseAnimator.SetBool("Pause", true);
             isPaused = true;
             Time.timeScale = 0;
         }
         else if (Input.GetButtonDown("Cancel") && isPaused == true)
         {
+            
            Continue();
         }
         totalTime -= Time.deltaTime;
@@ -87,7 +95,7 @@ public class UIScript : MonoBehaviour
 
     public void Continue()
     {
-        pauseMenu.SetActive(false);
+        pauseAnimator.SetBool("Pause", false);
         isPaused = false;
         Time.timeScale = 1;
     }
@@ -116,11 +124,13 @@ public class UIScript : MonoBehaviour
 
     public void GameOver()
     {
+        gameOverMenu.SetActive(true);
+        gameOverAnimator.SetBool("GameOver", true);
         _audioManager.FadeTimeUp(0);
         _audioManager.FadeGame(0.2f);
         _audioManager.FadeGO(1);
         Time.timeScale = 0;
-        gameOverMenu.SetActive(true);
+       
     }
 
     public void Victory()
@@ -128,7 +138,7 @@ public class UIScript : MonoBehaviour
         _audioManager.FadeTimeUp(0);
         _audioManager.FadeGame(0.2f);
         _audioManager.FadeVictory(1);
-        victoryScreen.SetActive(true);
+        VictoryAnimator.SetBool("Victory", true);
         Time.timeScale = 0;
         remainTime.text = timerText.text;
         int final = score + (seconds + (minutes * 60));
@@ -148,6 +158,7 @@ public class UIScript : MonoBehaviour
 
     public void Retry()
     {
+        gameOverAnimator.SetBool("GameOver", false);
         _audioManager.FadeTimeUp(0);
         _audioManager.FadeVictory(0);
         _audioManager.FadeGO(0);
