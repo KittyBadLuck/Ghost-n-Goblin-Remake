@@ -67,6 +67,7 @@ public class UIScript : MonoBehaviour
     {
         if (Input.GetButtonDown("Cancel") && isPaused == false)
         {
+            pauseMenu.SetActive(true);
             pauseAnimator.SetBool("Pause", true);
             isPaused = true;
             Time.timeScale = 0;
@@ -94,8 +95,10 @@ public class UIScript : MonoBehaviour
     }
 
     public void Continue()
-    {
+    { 
+        
         pauseAnimator.SetBool("Pause", false);
+        pauseMenu.SetActive(false);
         isPaused = false;
         Time.timeScale = 1;
     }
@@ -135,6 +138,7 @@ public class UIScript : MonoBehaviour
 
     public void Victory()
     {
+        victoryScreen.SetActive(true);
         _audioManager.FadeTimeUp(0);
         _audioManager.FadeGame(0.2f);
         _audioManager.FadeVictory(1);
@@ -159,6 +163,8 @@ public class UIScript : MonoBehaviour
     public void Retry()
     {
         gameOverAnimator.SetBool("GameOver", false);
+        victoryScreen.SetActive(false);
+        gameOverMenu.SetActive(false);
         _audioManager.FadeTimeUp(0);
         _audioManager.FadeVictory(0);
         _audioManager.FadeGO(0);

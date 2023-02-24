@@ -64,7 +64,7 @@ MonoBehaviour:
   speed: 50
   damage: 2
   reculStrenght: 3
-  explosion: {fileID: 4849277117792516116, guid: 4eeda6c04965e6449928504370516dfb,
+  explosion: {fileID: 1528947388857783734, guid: 030b45fb16844ba4396bb0df0e7e9f80,
     type: 3}
   charaController: {fileID: 0}
   arcThrow: 1

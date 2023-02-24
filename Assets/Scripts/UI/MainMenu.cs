@@ -18,7 +18,7 @@ public class MainMenu : MonoBehaviour
     {
         _audioManager.FadeGame(1);
         _audioManager.FadeMenu(0);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 
     public void Quit()
