@@ -26,6 +26,7 @@ public class ArmorBehavior : MonoBehaviour
     public void LooseArmor()
     {
         _animator.SetBool("Desintegrate", true);
+        _animator.SetBool("Appear", false);
         ParticleSystem.EmissionModule emissionModule;
 
         foreach (var system in systems)

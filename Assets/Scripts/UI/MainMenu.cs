@@ -11,13 +11,14 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         _audioManager = GameObject.FindWithTag("Music").GetComponent<AudioManager>();
+        _audioManager.FadeMenu(1);
     }
 
     public void PlayScene()
     {
         _audioManager.FadeGame(1);
         _audioManager.FadeMenu(0);
-        SceneManager.LoadScene("SceneAudiotest");
+        SceneManager.LoadScene(2);
     }
 
     public void Quit()

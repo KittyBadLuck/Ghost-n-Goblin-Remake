@@ -63,7 +63,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 3
-  reculStrenght: 2
+  reculStrenght: 5
   recul: {x: 0, y: 0, z: 0}
   lifeMax: 10
 --- !u!95 &8390773246558584648

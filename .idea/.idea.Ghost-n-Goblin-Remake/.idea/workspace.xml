@@ -3,20 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ca54dc67-ca2c-4bf7-b14f-0a8ef85f2a6f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ghost-n-Goblin-Remake/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ghost-n-Goblin-Remake/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/CharaAnimation.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/CharaAnimation.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Climbing Ladder.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Climbing Ladder.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Enemy/Mutant Swiping.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Enemy/Mutant Swiping.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Hit.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Hit.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Loot/LanceLoot.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Loot/LanceLoot.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/M_Armor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/M_Armor.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/M_Helmet.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/M_Helmet.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Texture/Armor/ArthurUV_M_Armor_BaseMap.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Texture/Armor/ArthurUV_M_Armor_BaseMap.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Texture/Armor/ArthurUV_M_Armor_MaskMap.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Texture/Armor/ArthurUV_M_Armor_MaskMap.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Texture/Armor/ArthurUV_M_Armor_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Texture/Armor/ArthurUV_M_Armor_Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Character.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Explosion.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Lance_Projectile 1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/GameObject.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/GameObject.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Vfx/Loot.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Vfx/Loot.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Loot/Accessory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Loot/Accessory.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Loot/Axe.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Loot/Axe.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Loot/Dagger.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Loot/Dagger.prefab" afterDir="false" />
@@ -24,34 +12,18 @@
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Loot/Lance.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Loot/Lance.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Loot/Shield.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Loot/Shield.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Loot/Torch.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Loot/Torch.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Weapon/Axe_Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Weapon/Axe_Projectile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Weapon/Dagger_Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Weapon/Dagger_Projectile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Weapon/Lance_Projectile.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Weapon/Lance_Projectile.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Weapon/Shield_Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Weapon/Shield_Projectile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Weapon/Fire 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Weapon/Fire 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Weapon/Lance_Projectile 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Weapon/Lance_Projectile 1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Weapon/Torch_Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Weapon/Torch_Projectile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/testScene/Lou.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/testScene/Lou.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Loot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Loot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/ArmorBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/ArmorBehavior.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/CharaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CharaController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shader/ArmorTest.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shader/ArmorTest.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shader/ArmorTest.shadergraph.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shader/ArmorTest.shadergraph.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Crate - Surface Shader Scene.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Crate - Surface Shader Scene.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Ground - Logo Scene.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Ground - Logo Scene.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Ground - Surface Shader Scene.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Ground - Surface Shader Scene.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Small Crate_diffuse.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Small Crate_diffuse.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF Logo.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF Logo.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF - Surface.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF - Surface.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +92,7 @@
       <workItem from="1677097934914" duration="3089000" />
       <workItem from="1677121602411" duration="4163000" />
       <workItem from="1677167321802" duration="7335000" />
-      <workItem from="1677182307462" duration="8600000" />
+      <workItem from="1677182307462" duration="14506000" />
     </task>
     <servers />
   </component>

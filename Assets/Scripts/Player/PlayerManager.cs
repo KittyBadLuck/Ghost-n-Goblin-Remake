@@ -16,6 +16,7 @@ public class PlayerManager : MonoBehaviour
 
     //ref to other script
     public PlayerAnimation attackScript;
+    public Animator _animatorArmor;
     private UIScript uiScript;
     private Animator _animator;
    
@@ -71,5 +72,12 @@ public class PlayerManager : MonoBehaviour
     {
         uiScript.GameOver();
         Destroy(gameObject);
+    }
+
+    public void GetArmor()
+    {
+        _animatorArmor.SetBool("Desintegrate", false);
+        _animatorArmor.SetBool("Appear", true);
+        
     }
 }

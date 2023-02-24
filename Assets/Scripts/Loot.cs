@@ -1,11 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Loot : MonoBehaviour
 {
     public bool isWeapon;
+    public bool isArmor;
     public int givenScore;
 
     public GameObject projectile; //if weapon, get the projectile to instantiate
@@ -25,13 +27,18 @@ public class Loot : MonoBehaviour
             {
                 _playerManager = other.GetComponent<PlayerManager>();
                 CheckPlayerWeapon();
-                Destroy(gameObject);
+            }
+            else if (isArmor)
+            {
+                _playerManager = other.GetComponent<PlayerManager>();
+                CheckPlayerArmor();
             }
             else 
             {
                 AddScore();
-                Destroy(gameObject);
+               
             }
+            Destroy(gameObject);
         }
     }
 
@@ -54,7 +61,7 @@ public class Loot : MonoBehaviour
         else
         {
             _playerManager.weaponInventory.Add(projectile);
-            Destroy(gameObject);
+           Destroy(gameObject);
         }
     }
 
@@ -62,5 +69,20 @@ public class Loot : MonoBehaviour
     {
         _uiScript.score += givenScore;
         _uiScript.UpdateScore();
+    }
+
+    private void CheckPlayerArmor()
+    {
+        if (_playerManager.damageTaken >= 0)
+        {
+            _playerManager.damageTaken = 0;
+            _playerManager.GetArmor();
+        }
+        else
+        {
+            AddScore();
+        }
+        Destroy(gameObject);
+       
     }
 }

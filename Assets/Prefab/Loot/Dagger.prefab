@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isWeapon: 1
+  isArmor: 0
   givenScore: 500
   projectile: {fileID: 9214923425313994002, guid: 08ee42a9b019aa6439a75b6ecba15ebe,
     type: 3}

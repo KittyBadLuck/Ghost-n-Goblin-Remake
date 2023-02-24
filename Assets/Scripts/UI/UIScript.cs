@@ -30,6 +30,10 @@ public class UIScript : MonoBehaviour
     public GameObject gameOverMenu;
 
     private bool isPaused;
+    private bool goPlayed;
+    private bool victoryPlayed;
+
+    private AudioManager _audioManager;
 
     private void Awake()
     {
@@ -44,8 +48,12 @@ public class UIScript : MonoBehaviour
         }
 
         totalTime = maxTimer;
+       _audioManager = GameObject.FindWithTag("Music").GetComponent<AudioManager>();
+        
+        victoryPlayed = false;
+        goPlayed = false;
 
-    }
+}
 
     // Update is called once per frame
     void Update()
@@ -63,8 +71,15 @@ public class UIScript : MonoBehaviour
         totalTime -= Time.deltaTime;
         UpdateLevelTimer(totalTime );
 
+        if (totalTime <= 20)
+        {
+            _audioManager.FadeGame(0.2f);
+            _audioManager.FadeTimeUp(1);
+        }
+
         if (totalTime <= 0)
         {
+            _audioManager.FadeTimeUp(0);
             GameOver();
         }
         
@@ -79,7 +94,13 @@ public class UIScript : MonoBehaviour
 
     public void QuitGame()
     {
-        Application.Quit();
+        SceneManager.LoadScene(0);
+        _audioManager.FadeGame(0);
+        _audioManager.FadeVictory(0);
+        _audioManager.FadeGO(0);
+        _audioManager.FadeMenu(1);
+        _audioManager.FadeTimeUp(0);
+
     }
 
     public void UpdateScore()
@@ -95,12 +116,18 @@ public class UIScript : MonoBehaviour
 
     public void GameOver()
     {
+        _audioManager.FadeTimeUp(0);
+        _audioManager.FadeGame(0.2f);
+        _audioManager.FadeGO(1);
         Time.timeScale = 0;
         gameOverMenu.SetActive(true);
     }
 
     public void Victory()
     {
+        _audioManager.FadeTimeUp(0);
+        _audioManager.FadeGame(0.2f);
+        _audioManager.FadeVictory(1);
         victoryScreen.SetActive(true);
         Time.timeScale = 0;
         remainTime.text = timerText.text;
@@ -121,7 +148,11 @@ public class UIScript : MonoBehaviour
 
     public void Retry()
     {
-        Debug.Log("Retry");
+        _audioManager.FadeTimeUp(0);
+        _audioManager.FadeVictory(0);
+        _audioManager.FadeGO(0);
+        _audioManager.FadeGame(1);
+        
         Time.timeScale = 1;
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);

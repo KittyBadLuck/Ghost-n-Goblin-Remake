@@ -65,7 +65,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 5a6afbbd67debc646a339c3b9151ee20, type: 3}
   speed: 100
   damage: 2
-  reculStrenght: 1
+  reculStrenght: 10
   explosion: {fileID: 4849277117792516116, guid: 4eeda6c04965e6449928504370516dfb,
     type: 3}
   charaController: {fileID: 0}
